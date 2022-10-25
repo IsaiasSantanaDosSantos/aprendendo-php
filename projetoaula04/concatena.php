@@ -14,9 +14,7 @@ $var += 7; //Atribuição com adição, $var, que continha o valor 5, agora rece
 echo "$var <br>";
 $var %= 3; //Atribuição com módulo, $var, que continha o valor 12, recebe a operação 12%3=0;
 echo "$var <br>";
-$var = "oi"; //Atribuição simples, $var, que continha o valor 0, substitui esse valor por “oi”
+$var = "oi"; //Atribuição simples, $var, que continha o valor 0, substitui esse valor por "oi"
 echo "$var <br>";
-$var .= " testando"; //Atribuição com concatenação, $var continha a string “oi”, passa a conter a string “oi testando”
+$var .= " testando"; //Atribuição com concatenação, $var continha a string "oi", passa a conter a string "oi testando"
 echo "$var <br>";
-
-?>

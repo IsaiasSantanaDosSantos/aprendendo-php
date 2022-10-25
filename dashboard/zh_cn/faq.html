@@ -84,7 +84,7 @@
       <p></p>
       <p>XAMPP控制面板可以用于启动/停止Apache, MySQL, FileZilla和Mercury以及将它们安装为服务。</p>
       <p><strong>通过ZIP安装</strong></p>
-      <p>解压ZIP压缩文件到您选择的文件夹中。 XAMPP被提取到子目录"C:\\xampp"选定的目标目录下。然后启动文件“setup_xampp.bat”进行配置以便XAMPP的配置调整到系统中。</p>
+      <p>解压ZIP压缩文件到您选择的文件夹中。 XAMPP被提取到子目录"C:\\xampp"选定的目标目录下。然后启动文件"setup_xampp.bat"进行配置以便XAMPP的配置调整到系统中。</p>
       <p>如果你选择根目录"C:\\"作为安装目标，你绝对不要启动"setup_xampp.bat"。</p>
       <p>就像安装版一样，你现在可以使用XAMPP控制面板来完成更多工作。</p>
       </dd>
@@ -159,20 +159,20 @@
       <p>请在发布任何东西到网上之前做好XAMPP的安全。一个防火墙或者一个外部路由器只能让你达到一个比较低的安全水平。需要高一点的安全的话，你可以运行下XAMPP安全控制台并设置密码。</p>
       <p>如果你想要让你的XAMPP通过互联网访问的话，你需要访问下述网站来修复一些问题：</p>
       <p><code> http://localhost/security/</code></p>
-      <p>借助安全控制台，您可以设置MySQL的“root”用户和phpMyAdmin的密码。您还可以给XAMPP的演示页启用一个认证。</p>
+      <p>借助安全控制台，您可以设置MySQL的"root"用户和phpMyAdmin的密码。您还可以给XAMPP的演示页启用一个认证。</p>
       <p>这个基于网络的工具不能修复任何附加的安全问题！尤其是FileZilla FTP服务器和Mercury邮件服务器，你必须自行保护它们。</p></dd>
       <dt>如何卸载XAMPP？</dt>
       <dd>
       <p>如果你使用安装包版本安装了XAMPP，请使用卸载工具卸载。卸载工具会删除掉所有的XAMPP的文件并会卸载掉已经安装的服务，包括XAMPP自身。我们强烈推荐你使用卸载程序移除XAMPP的安装。请在卸载之前备份你所有想保留的文件。</p>
       <p>如果你使用zip或者7zip版本安装了XAMPP，请关掉所有的XAMPP服务器并退出控制面板。如果你安装了服务，也需要卸载并关闭他们。现在只需要简单的把XAMPP所在文件夹一删就完事了，不会再有需要清理的任何注册表项或者环境变量啦。</p>
       </dd>
-      <dt>XAMPP的“lite”版本是什么玩意？</dt>
+      <dt>XAMPP的"lite"版本是什么玩意？</dt>
       <dd>
-      <p>XAMPP Lite（意思是“轻的”或者“轻量级的”）是一个更小的XAMPP的组件合集，推荐用来做一些只需要PHP和MySQL的快速的工作。像Mercury邮件或者是FileZilla的FTP服务器在这个版本里都是没有的。</p>
+      <p>XAMPP Lite（意思是"轻的"或者"轻量级的"）是一个更小的XAMPP的组件合集，推荐用来做一些只需要PHP和MySQL的快速的工作。像Mercury邮件或者是FileZilla的FTP服务器在这个版本里都是没有的。</p>
       </dd>
       <dt>我应该把我的web内容放在哪里呢？</dt>
       <dd>
-      <p>所有www文档的根目录都是\\xampp\\htdocs。如果你在目录里放一个文件“test.html”，你可以通过这个URL访问它：http://localhost/test.html。</p>
+      <p>所有www文档的根目录都是\\xampp\\htdocs。如果你在目录里放一个文件"test.html"，你可以通过这个URL访问它：http://localhost/test.html。</p>
       <p>至于"test.php"呢？用"http://localhost/test.php"就可以啦。一个简单的测试脚本可以这么写：</p>
       <p><code>&lt;?php<br />
         echo 'Hello world'; <br />
@@ -218,9 +218,9 @@
       <p>如果你已经将任意一个服务器安装成了Windows服务，你必须先移除服务，移动之后你可以重新安装服务。</p>
       <p>警告：你自己的脚本的配置文件，例如你的PHP应用，是不会被调整的。但是你可以为安装工具写一个插件，借助这样一个插件，安装工具就也可以同时调整这些文件了。</p>
       </dd>
-      <dt>访问WWW目录的时候指向的“默认起始页”的名称是什么呢？</dt>
+      <dt>访问WWW目录的时候指向的"默认起始页"的名称是什么呢？</dt>
       <dd>
-      <p>Apache的"DirectoryIndex"（目录起始页）功能的预设文件名是“index.html”或者“index.php”。每次当你访问一个文件夹的时候（例如http://localhost/xampp/），Apache会先找一下指定名称的文件，并且找的话会默认显示那个文件而不会再显示目录的文件列表啦。</p>
+      <p>Apache的"DirectoryIndex"（目录起始页）功能的预设文件名是"index.html"或者"index.php"。每次当你访问一个文件夹的时候（例如http://localhost/xampp/），Apache会先找一下指定名称的文件，并且找的话会默认显示那个文件而不会再显示目录的文件列表啦。</p>
       </dd>
       <dt>我可以在哪儿修改配置呢？</dt>
       <dd>
@@ -258,7 +258,7 @@
       <p>你已经在"C:\\xampp"将Apache/MySQL安装成Windows服务但你不能通过"XAMPP控制面板"启动/停止这些服务或者不能卸载它们。</br></br>
 <strong>解决方案：</strong> 从Windows使用服务管理控制台或禁用UAC。</p>
       <p><strong>禁用用户帐户控制（UAC）</strong></p>
-      <p>为了禁用UAC，你需要使用程序“msconfig”。在msconfig当中找到“工具”，选择“禁用用户账户控制”然后保存你的更改。现在你必须重启一下电脑。同时你也可以再次启动UAC。</p>
+      <p>为了禁用UAC，你需要使用程序"msconfig"。在msconfig当中找到"工具"，选择"禁用用户账户控制"然后保存你的更改。现在你必须重启一下电脑。同时你也可以再次启动UAC。</p>
       </dd>
 
       <dt>我如何检查md5校验值呢？</dt>
@@ -311,7 +311,7 @@
           <li>你开启了不止一个HTTP的服务器(IIS, Sambar, ZEUS以及别的什么)。只有一个服务器可以占用80端口。这个错误消息指出了这个问题：<br/>
 <code>(OS 10048)... make_sock: could not bind to adress 0.0.0.0:80
 no listening sockets available, shutting down</code></li>
-          <li>你有其他的软件，例如也会阻断80端口的互联网电话软件“skype”。如果问题来源于skype，你可以进入skype找到操作 - >选项 - >连接 - >取消勾选“使用端口80作为备用端口”，然后重新启动Skype。现在应该可以正常工作了。</li>
+          <li>你有其他的软件，例如也会阻断80端口的互联网电话软件"skype"。如果问题来源于skype，你可以进入skype找到操作 - >选项 - >连接 - >取消勾选"使用端口80作为备用端口"，然后重新启动Skype。现在应该可以正常工作了。</li>
           <li>你有一个阻断了Apache端口的防火墙。不是所有的防火墙都兼容Apache，而有的时候禁用防火墙是不够的，还得卸载掉它才行。这个错误信息是指向防火墙的：<br/>
 <code>(OS 10038)Socket operation on non-socket: make_sock: for address 0.0.0.0:80,
 apr_socket_opt_set: (SO_KEEPALIVE)</code></li>
@@ -434,7 +434,7 @@ EnableMMAP off</code></p>
 
       <dt>我如何修复我的MS SQL服务器的连接错误？</dt>
       <dd>
-      <p>如果mssql扩展加载到了php.ini，有时候当只有TCP/IP使用的时候会出问题。你可以从微软获取一个新的“ntwdblib.dll”来修复这个问题。请用新的替换掉位于"\\xampp\\apache\\bin"和"\\xampp\\php"的旧的文件。因为许可证问题，我们不能把这个文件的更新版本打包进XAMPP。</p>
+      <p>如果mssql扩展加载到了php.ini，有时候当只有TCP/IP使用的时候会出问题。你可以从微软获取一个新的"ntwdblib.dll"来修复这个问题。请用新的替换掉位于"\\xampp\\apache\\bin"和"\\xampp\\php"的旧的文件。因为许可证问题，我们不能把这个文件的更新版本打包进XAMPP。</p>
       </dd>
 
       <dt>我如何使用PHP mcrypt扩展？</dt>
