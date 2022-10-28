@@ -26,5 +26,4 @@ $resultado = $numero1/$numero2;
 
 echo "O Resultado é $resultado";
 
-include 'home.php';
-?>
+include "home.php";

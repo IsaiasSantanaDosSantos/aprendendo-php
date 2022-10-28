@@ -7,7 +7,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- Use title if it"s in the page YAML frontmatter -->
     <title>XAMPP FAQs for Windows</title>
 
     <meta name="description" content="Instructions on how to install XAMPP for Windows distributions." />
@@ -32,7 +32,7 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, "script", "facebook-jssdk"));</script>
     <div class="contain-to-grid">
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
@@ -175,7 +175,7 @@
       <p>Главный каталог для всех WWW документов это \\xampp\\htdocs. Если вы положите файл "test.html" в этот каталог, вы сможете получить доступ к нему по URI "http://localhost/test.html".</p>
       <p>И "test.php"? Просто используйте "http://localhost/test.php". Простой тест-скритп может быть:</p>
       <p><code>&lt;?php<br />
-        echo 'Hello world'; <br />
+        echo "Hello world"; <br />
         ?&gt;</code></p>
       <p>Новая суб-каталог для вашего веб проекта? Просто создайте новый каталог (пример: "new") внутри каталога "\\xampp\\htdocs" (желательно без пробелов и с использованием только ASCII), создайте файл "test.php" в этом каталоге, вы сможете получить доступ к нему по URI "http://localhost/new/test.php".</p>
       <p><strong>Дополнительные особенности</strong></p>
@@ -329,7 +329,7 @@ apr_socket_opt_set: (SO_KEEPALIVE)</code></li>
       <dd>
       <p>В данном случае действует один из двух сценариев. Либо ваш процессор работает на пределе своих возможностей, или вы можете подсоеденится к серверу через браузер, но ничего не видите (система безуспешно пытается загрузить страницу). В любом случае вы можете найти следующее сообщение в лог файле Apache:</p>
       <p><code>Child: Encountered too many AcceptEx faults accepting client connections.
-winnt_mpm: falling back to 'AcceptFilter none'.</code></p>
+winnt_mpm: falling back to "AcceptFilter none".</code></p>
       <p>MPM возвращается к более безопасному выполнению, но некоторые клиентские запросы не обрабатывались корректно. Для того чтобы избежать этой ошибки, используйте "AcceptFilter" с включенным фильтром "none" в файле "\\xampp\\apache\\conf\\extra\\httpd-mpm.conf".</p>
       </dd>
 
@@ -359,17 +359,17 @@ EnableMMAP off</code></p>
           auth_username=your-gmail-username@gmail.com
           auth_password=your-gmail-password
           </code>
-          <p>Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.</p>
+          <p>Remember to replace the dummy values shown with your actual Gmail address and account password. If you don"t plan to use Gmail"s SMTP server, replace the SMTP host details with appropriate values for your organization or ISP"s SMTP server.</p>
           </li>
           <li>Restart the Apache server using the XAMPP control panel.
           </li>
         </ul>
-        <p>You can now use PHP's mail() function to send email from your application.</p> 
+        <p>You can now use PHP"s mail() function to send email from your application.</p> 
       </dd>
       
-      <dt>Как я могу установить пароль root'а в MySQL?</dt>
+      <dt>Как я могу установить пароль root"а в MySQL?</dt>
       <dd>
-      <p>Configure it with the "XAMPP Shell" (command prompt). Open the shell from the XAMPP control pane and execute this command:<code>mysqladmin.exe -u root password secret</code>This sets the root password to 'secret'.</p>
+      <p>Configure it with the "XAMPP Shell" (command prompt). Open the shell from the XAMPP control pane and execute this command:<code>mysqladmin.exe -u root password secret</code>This sets the root password to "secret".</p>
       </dd>
 
       <dt>Могу ли я использовать свой собственный MySQL сервер?</dt>
@@ -398,7 +398,7 @@ EnableMMAP off</code></p>
                 Require local
           </code></p>
         </li>
-        <li>Then replace 'Require local' with 'Require all granted'.</li>
+        <li>Then replace "Require local" with "Require all granted".</li>
           <p><code>
               Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
               &lt;Directory "C:/xampp/phpMyAdmin"&gt;
@@ -453,19 +453,19 @@ EnableMMAP off</code></p>
       <p>To disable IIS from running on port 80, follow these steps:</p>
       <ul>
         <li>Open the Services panel in Computer Management.</li>
-        <li>Search for the 'World Wide Web Publishing Service' and select it.</li>
-        <li>Click the link to 'Stop the service'.</li>
+        <li>Search for the "World Wide Web Publishing Service" and select it.</li>
+        <li>Click the link to "Stop the service".</li>
         <li>Double-click the service name.</li>
-        <li>In the 'Startup type' field, change the startup type to 'Disabled'.</li>
-        <li>Click 'OK' to save your changes.</li>
+        <li>In the "Startup type" field, change the startup type to "Disabled".</li>
+        <li>Click "OK" to save your changes.</li>
       </ul>
       <p>You should now be able to start Apache in XAMPP on port 80.</p>
-      <p>For more information, refer to the 'Troubleshoot Apache Startup Problems' guide included with XAMPP or <a href='https://community.apachefriends.org/f/viewtopic.php?f=16&t=71620'>this forum post</a>.</p>
+      <p>For more information, refer to the "Troubleshoot Apache Startup Problems" guide included with XAMPP or <a href="https://community.apachefriends.org/f/viewtopic.php?f=16&t=71620">this forum post</a>.</p>
       </dd>
       
       <dt>How can I use Microsoft Edge to access local addresses under Windows 10?</dt>
       <dd>
-      <p>If your local machine has the host name 'myhost', you will not be able to access URLs such as http://myhost in Microsoft Edge. To resolve this, you should instead use the addresses http://127.0.0.1 or http://localhost.</p>
+      <p>If your local machine has the host name "myhost", you will not be able to access URLs such as http://myhost in Microsoft Edge. To resolve this, you should instead use the addresses http://127.0.0.1 or http://localhost.</p>
       </dd>
 
       <dt>Where are the main XAMPP configuration files?</dt>

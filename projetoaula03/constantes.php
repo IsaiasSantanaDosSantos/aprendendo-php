@@ -1,6 +1,6 @@
 <?php
 
-include 'home.php';
+include "home.php";
 
 define("pi", 3.1415);
 
@@ -43,5 +43,3 @@ $resultado = $numero - KC;
 }
 
 echo "O Resultado é $resultado";
-
-?>

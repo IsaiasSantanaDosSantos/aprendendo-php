@@ -1,6 +1,6 @@
 <?php
 
-include 'home.php';
+include "home.php";
 
 $dividendo = $_POST["num1"];
 
@@ -11,5 +11,3 @@ $resto = $dividendo % $divisor;
 $quociente = (int)($dividendo / $divisor);
 
 echo "$dividendo / $divisor = $quociente resto $resto";
-
-?>

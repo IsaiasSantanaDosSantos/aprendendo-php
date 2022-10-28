@@ -66,6 +66,6 @@ substitui($texto);
 
 echo "<br>Sem vogais: $texto<br>";
 
-echo "<br>Existe o texto 'tst' na posição: " . $posicao = strpos($texto, "tst");
+echo "<br>Existe o texto "tst" na posição: " . $posicao = strpos($texto, "tst");
 
 ?>

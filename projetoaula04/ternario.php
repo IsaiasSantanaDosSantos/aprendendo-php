@@ -1,6 +1,6 @@
 <?php
 
-include 'home.php';
+include "home.php";
 
 $num1 = $_POST["val1"];
 
@@ -31,5 +31,3 @@ $terna = $num1 < $num2 ? "SIM" : "NÃO";
 }
 
 echo "$num1 $opera $num2 ? $terna!";
-
-?>

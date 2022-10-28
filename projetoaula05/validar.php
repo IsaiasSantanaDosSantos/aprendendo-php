@@ -1,6 +1,6 @@
 <?php
 
-include 'cpfFor.php';
+include "cpfFor.php";
 
 $cpf = $_POST["cpf"];
 
@@ -79,4 +79,3 @@ echo "<br>CPF $cpf Inválido!";
 echo "<br>CPF $cpf Inválido!";
 
 }
-?>

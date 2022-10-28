@@ -7,7 +7,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- Use title if it"s in the page YAML frontmatter -->
     <title>Use SQLite and PHP</title>
 
     <link
@@ -177,13 +177,13 @@ CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, price REAL);</pre
                   <div class="literalblock">
                     <div class="content">
                       <pre>
-INSERT INTO items VALUES ('1001', 'Salt', 3.15);
-INSERT INTO items VALUES ('1002', 'Pepper', 2.75);
-INSERT INTO items VALUES ('1003', 'Eggs', 2.00);
-INSERT INTO items VALUES ('1004', 'Bacon', 7.25);
-INSERT INTO items VALUES ('1005', 'Milk', 1.15);
-INSERT INTO items VALUES ('1006', 'Strawberries', 8.73);
-INSERT INTO items VALUES ('1007', 'Cereal', 2.65);</pre
+INSERT INTO items VALUES ("1001", "Salt", 3.15);
+INSERT INTO items VALUES ("1002", "Pepper", 2.75);
+INSERT INTO items VALUES ("1003", "Eggs", 2.00);
+INSERT INTO items VALUES ("1004", "Bacon", 7.25);
+INSERT INTO items VALUES ("1005", "Milk", 1.15);
+INSERT INTO items VALUES ("1006", "Strawberries", 8.73);
+INSERT INTO items VALUES ("1007", "Cereal", 2.65);</pre
                       >
                     </div>
                   </div>
@@ -249,11 +249,11 @@ INSERT INTO items VALUES ('1007', 'Cereal', 2.65);</pre
               <div class="content">
                 <pre>
 &lt;?php
-$db = new SQLite3('mydb.sq3');
+$db = new SQLite3("mydb.sq3");
 $sql = "SELECT * FROM items WHERE price &lt; 3.00";
 $result = $db-&gt;query($sql);
 while ($row = $result-&gt;fetchArray(SQLITE3_ASSOC)){
-  echo $row['name'] . ': $' . $row['price'] . '&lt;br/&gt;';
+  echo $row["name"] . ": $" . $row["price"] . "&lt;br/&gt;";
 }
 unset($db);</pre
                 >
@@ -294,7 +294,7 @@ unset($db);</pre
                     <i class="fa icon-tip" title="Tip"></i>
                   </td>
                   <td class="content">
-                    To find out more about SQLite’s powerful features,
+                    To find out more about SQLite"s powerful features,
                     <a href="http://sqlite.org/docs/"
                       >read the SQLite documentation</a
                     >.
